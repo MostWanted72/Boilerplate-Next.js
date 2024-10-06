@@ -1,6 +1,7 @@
 import "@/../public/globals.css";
 import "@/../public/main.scss";
 import Header from "@/components/header";
+import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 export const metadata = {
   title: "Next.js",
@@ -14,10 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Header />
-        {children}
-      </body>
+      <UserProvider>
+        <body>
+          <Header />
+          {children}
+        </body>
+      </UserProvider>
     </html>
   );
 }
