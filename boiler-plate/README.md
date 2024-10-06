@@ -1,1 +1,1 @@
-node verstion ---> 20.9.0
+node version ---> 20.9.0
