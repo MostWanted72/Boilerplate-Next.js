@@ -9,7 +9,7 @@ export default async function Header() {
     <div className="flex justify-between p-4 bg-slate-400">
       <div>
         <Link href={paths.landingPage}>
-          <h1>Flower Garder</h1>
+          <h1>To Do List</h1>
         </Link>
       </div>
       {!session ? (
